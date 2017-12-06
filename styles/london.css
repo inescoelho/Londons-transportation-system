@@ -1,0 +1,77 @@
+/*
+ * Configurations
+ */
+:root {
+  --footer-space: 10px;
+  --main-color: #d80808;
+  --darker-color: #a00303;
+}
+
+/*
+ * Base structure
+ */
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* The image used */
+  background-image: url("../resources/london.jpg");	
+}
+
+/*
+ * Sidebar
+ */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px 20px;
+  overflow-x: auto;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  background-color: var(--main-color);
+  opacity: 0.8;
+  color:white;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+.sidebar button,
+.sidebar button:hover, 
+.sidebar button:focus,
+.sidebar button:active  {
+	color: white;
+}
+
+/*
+ * Information Container
+ */
+#informationContainer {
+	padding: 50px 25px 50px 25px;
+	border-radius: 5px;
+	background-color: white;
+	background-color: white;
+}
+
+/*
+ * Footer
+ */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--main-color);
+  color:white;
+}
+.footer a {
+	color: white;
+}
+.footer p {
+	margin-bottom: var(--footer-space);
+	margin-top: var(--footer-space);
+}
